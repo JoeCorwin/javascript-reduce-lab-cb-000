@@ -19,4 +19,4 @@ const monologueLines = [
 
 const batteryCounter= (accumulator, currentValue) => accumulator + currentValue;
 
-const totalBatteries = batteryBatches.reduce(batteryCounter));
+const totalBatteries = batteryBatches.reduce(batteryCounter);
