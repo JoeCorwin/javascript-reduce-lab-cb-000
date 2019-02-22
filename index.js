@@ -17,6 +17,24 @@ const monologueLines = [
   'I am the one who knocks!'
 ];
 
-const batteryCounter= (accumulator, currentValue) => accumulator + currentValue;
+const batteryCounter = (accumulator, currentValue) => accumulator + currentValue;
 
 const totalBatteries = batteryBatches.reduce(batteryCounter);
+
+
+const wordCounter = function(accumulator, currentValue) {
+  if sentence.split(' ').length
+};
+
+
+const wordCountMap = monologueLines.reduce(function (wordCountObj, sentence) { 
+  if ((sentence.split(' ').length) in wordCountObj) {
+    wordCountObj[(sentence.split(' ').length)]++;
+  }
+  else {
+    wordCountObj[(sentence.split(' ').length)] = 1;
+  }
+  return wordCountObj;
+};
+
+
