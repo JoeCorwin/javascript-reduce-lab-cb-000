@@ -22,6 +22,8 @@ const batteryCounter = (accumulator, currentValue) => accumulator + currentValue
 const totalBatteries = batteryBatches.reduce(batteryCounter);
 
 
+const wordCountMap = monologueLines.reduce(wordCounter);
+
 const wordCounter = function (wordCountObj, sentence) {
   if ((sentence.split(' ').length) in wordCountObj) {
     wordCountObj[(sentence.split(' ').length)]++;
@@ -32,4 +34,4 @@ const wordCounter = function (wordCountObj, sentence) {
   return wordCountObj;
 };
 
-const wordCountMap = monologueLines.reduce(wordCounter);
+
