@@ -21,4 +21,4 @@ function batteryCounter(batteryBatches){
   return batteryBatches.length
 };
 
-const totalBatteries = batteryBatches.reduce(batteryCounter)
+const totalBatteries = batteryBatches.reduce(batteryCounter, 0)
