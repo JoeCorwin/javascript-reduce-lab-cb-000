@@ -28,7 +28,7 @@ const wordCounter = function(accumulator, currentValue) {
 
 
 const wordCountMap = monologueLines.reduce(function (wordCountObj, sentence) {
-  if ((sentence.split(' ').length) in wordCountObj) {
+  if (sentence.split(' ').length in wordCountObj) {
     wordCountObj[(sentence.split(' ').length)]++;
   }
   else {
