@@ -24,7 +24,7 @@ const totalBatteries = batteryBatches.reduce(batteryCounter);
 
 const wordCountMap = 1;
 
-const wordCountMap = monologueLines.reduce(wordCounter);
+// const wordCountMap = monologueLines.reduce(wordCounter);
 
 // const wordCounter = function (wordCountObj, sentence) {
 //   if ((sentence.split(' ').length) in wordCountObj) {
