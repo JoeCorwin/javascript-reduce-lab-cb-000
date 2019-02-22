@@ -23,11 +23,13 @@ const totalBatteries = batteryBatches.reduce(batteryCounter);
 
 
 const wordCounter = function (wordCountObj, sentence) {
-  if ((sentence.split(' ').length) in wordCountObj) {
-    wordCountObj[sentence.split(' ').length]++;
+  var sentenceLength = sentence.split(' ').length;
+
+  if (sentenceLength in wordCountObj) {
+    wordCountObj[sentenceLength]++;
   }
   else {
-    wordCountObj[sentence.split(' ').length] = 1;
+    wordCountObj[sentenceLength] = 1;
   }
   return wordCountObj;
 };
